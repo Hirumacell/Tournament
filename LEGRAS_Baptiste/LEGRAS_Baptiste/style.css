@@ -1,0 +1,398 @@
+:root {
+    --primary: #660000;
+    --secondary: #6E0B14;
+    --thirdly: #330000;
+    --bck: #f0f0f0;
+}
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    background-color: var(--secondary);
+}
+
+/* -- -- -- -- -- -- -- -- -- HEADER -- -- -- -- -- -- -- */
+
+#header {
+    background-color: var(--secondary);
+    display: flex;
+    width: 100%;
+    z-index: 10;
+    padding: 0.1rem;
+    position: fixed;
+}
+
+#header img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+#header .site-brand {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+
+.navbar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.navbar span {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    color: var(--bck);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    opacity: 1;
+    margin: 0 5px;
+}
+
+/* -- -- -- -- -- -- -- -- -- HOME -- -- -- -- -- -- -- */
+
+#home-hero div {
+    padding: 5rem 0 0 0;
+}
+
+#home-hero div video {
+    width: 100%;
+    height: 100%;
+}
+
+#home-presentation {
+    margin: 0.5rem 0;
+}
+
+#home-presentation h1 {
+    text-align: center;
+
+}
+
+#home-presentation img {
+    border: 3px solid var(--primary);
+}
+
+#home-cards {
+    background-color: var(--secondary);
+}
+
+#home-cards div h1 {
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#presentation {
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+#presentation div {
+    padding: 0.5rem;
+}
+
+#presentation div h2 {
+    margin: 0;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+
+#presentation div:nth-child(1) {
+    margin: 0.5rem;
+    padding: 1rem 0;
+    display: block;
+}
+
+@media screen and (min-width: 1200px) {
+
+    #presentation div:nth-child(1) {
+        margin: 0.5rem;
+        padding: 5rem 0;
+        display: block;
+    }
+}
+
+#presentation div:nth-child(2) {
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+}
+
+
+#presentation div p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.home-title {
+    text-align: center;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0.5rem 1rem;
+}
+
+
+.card {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 1rem 0.25rem;
+    background-color: #C0C0C0;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.card img {
+    display: block;
+    width: 10rem;
+    height: auto;
+    margin: 0 auto 0 auto;
+    border-radius: 0.5rem;
+}
+
+.card-title h2 {
+    opacity: 1;
+    *z-index: 2;
+    color: #6E0B14;
+    font-size: 100%;
+    margin: 0.3rem;
+}
+
+section h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    z-index: 2;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.card:hover {
+    box-shadow: 10px 5px 5px var(--primary);
+}
+
+.more-fighters {
+    text-align: end;
+}
+
+.more-fighters ul li a {
+    margin: 0 10px;
+}
+
+#home-bracket {
+    text-align: center;
+}
+
+#home-bracket img {
+    width: 98%;
+    height: auto;
+}
+
+/* -- -- -- -- -- -- -- -- -- FOOTER -- -- -- -- -- -- -- */
+
+#footer {
+    padding: 10px;
+}
+
+#footer p {
+    max-width: 300px;
+    order: 1;
+    justify-content: flex-start;
+    margin: 0.5rem;
+    text-align: justify;
+}
+
+.social-links {
+    display: flex;
+    height: 5rem;
+    padding: 0 1rem;
+    width: auto;
+    justify-content: flex-end;
+    order: 2;
+    text-decoration: none;
+    list-style: none;
+    align-content: center;
+    align-items: center;
+    margin: 0 1rem 0 0;
+}
+
+.social-links li a span.visually-hidden {
+    display: none;
+}
+
+.social-links li a span {
+    color: #f0f0f0;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.social-links li a span:hover {
+    transition: color 0.5s;
+    color: var(--primary);
+}
+
+.copyright {
+    background-color: var(--secondary);
+    color: #f0f0f0;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    max-height: max-content;
+}
+
+/* -- -- -- -- -- -- -- -- -- BET -- -- -- -- -- -- -- */
+
+#bet-form {
+    padding: 5rem 0 0 0;
+}
+
+/*---------------------------- FORM ----------------------------------*/
+
+#bet-form {
+    padding: 5rem 1rem 1rem 1rem;
+    max-width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#bet-form div form div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bet-form p {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+}
+
+.form-control {
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+    text-align: justify;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+
+/* -- -- -- -- -- -- -- -- -- ABOUT -- -- -- -- -- -- -- */
+
+#about-hero {
+    padding: 5rem 0 0 0;
+}
+
+#about-hero div h2 {
+    font-size: 2rem;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+#about-hero div img {
+    width: 420px;
+    height: auto;
+}
+
+#about-presentation {
+    max-width: 100%;
+    padding: 0 1rem;
+    display: block;
+    justify-content: space-around;;
+}
+
+#about-presentation div h1 {
+
+    display: block;
+    font-family: 'Permanent Marker', cursive;
+    justify-content: center;
+}
+
+.about-presentation {
+    display: flex;
+    justify-content: space-around;
+}
+
+#about-presentation div p {
+    display: flex;
+    font-family: 'Maven Pro', sans-serif;
+    justify-content: center;
+    color: #f0f0f0;
+}
+
+.inspiration {
+    display: flex;
+    padding: 10px 1rem;
+    justify-content: space-around;
+}
+
+/*---------------------------- COMPONENT ----------------------------------*/
+
+#container {
+    position: relative;
+    width: 100%;
+}
+
+.btn {
+    border: black;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    background-color: #696969;
+    border-radius: 3rem;
+    padding: 0.5rem;
+}
+
+.btn-ext {
+    border: black;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3rem;
+    padding: 0.5rem;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+    transition: 0.2s linear transform;
+    background-color: var(--thirdly);
+    color: #f0f0f0;
+}
+
+

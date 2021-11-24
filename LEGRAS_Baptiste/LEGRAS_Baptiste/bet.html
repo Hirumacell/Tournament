@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Parier sur les combattants</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="header">
+    <div class="site-brand">
+        <a href="index.html">
+            <img src="Tournament_brand.png" alt="Logo Kengan">
+        </a>
+    </div>
+    <nav class="navbar">
+        <span>
+            TOURNOIS MORT OU VIF
+        </span>
+        <ul>
+            <li><a class="btn" href="index.html">
+                Accueil</a>
+            </li>
+            <li><a class="btn" href="bet.html">
+                Parier</a>
+            </li>
+            <li><a class="btn" href="about.html">
+                A propos ...</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="bet-form">
+        <div class="container">
+            <h1>Parier sur le gagnant du tournoi</h1>
+            <form action="?" method="POST">
+                <p>
+                    <label for="society">Entreprise</label>
+                    <label>
+                        <input type="text"
+                               id="society"
+                               value=""
+                               minlength="2"
+                               maxlength="255"
+                               class="form-control"
+                        />
+                    </label>
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" class="form-control" name="email" required>
+                </p>
+                <p>
+                    <label for="phone_number">Téléphone</label>
+                    <input type="tel" class="form-control" id="phone_number" name="phone_number" required>
+                </p>
+                <p>
+                    <label for="bet">Montant du pari:</label>
+                    <input type="number" id="bet" name="bet" min="1000" step="1000" max="50000" required>
+                </p>
+                <p>
+                    <label for="fighter">Combattant</label>
+                    <input type="text"
+                           id="fighter"
+                           value=""
+                           minlength="2"
+                           maxlength="255"
+                           class="form-control"
+                           required
+                    />
+                </p>
+                <div>
+                    <button type="submit" class="btn">Poursuivre le paiement
+                        <span class="fas fa-arrow-circle-right"></span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
